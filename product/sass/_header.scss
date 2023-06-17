@@ -1,0 +1,119 @@
+.header {
+    background-image: url(../img/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+    &__content {
+        height: calc(100vh - 80px); 
+        display: flex;
+        align-items: center;     
+    }
+    &__center{
+        display: flex;
+        align-items: center;
+        max-width: 510px;
+    }
+
+    &__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 58px;
+        line-height: 80px;
+        letter-spacing: 0.2px;
+        color: #252B42;
+        max-width: 509px;
+    }
+
+    &__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+        color: #737373;
+        margin-top: 34px;
+        margin-bottom: 45px;
+    }
+
+}
+
+@mixin button($bacc, $color, $bord, $brad, $padd) {
+    background: $bacc;
+    color: $color;
+    border: 1px solid $bord;
+    border-radius: $brad;
+    padding: $padd;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn__1 {
+    @include button(#FFA62B, #FFFFFF, #FFA62B, 37px, 10px 36px)
+}
+
+.btn__2 {
+    @include button(none, #00A0C1, #00A0C1, 37px, 10px 36px)
+}
+
+.header__footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.header__card {
+    width: 328px;
+    padding: 35px 0 35px 40px;
+    background-color: #FFFFFF;
+}
+
+.header__card1 {
+    width: 328px;
+    padding: 35px 0 35px 40px;
+    background-color: #00A0C1;
+    color: #FFFFFF;
+}
+
+.b__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin-top: 13px;
+    margin-bottom: 10px;
+}
+.b__title1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    margin-top: 13px;
+    margin-bottom: 10px;
+}
+.b__text{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.2px;
+color: #737373;
+}
+.b__text1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
